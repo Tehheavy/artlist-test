@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0e7992d5a01b810ec89ade5df10e2b6b",
+    "revision": "d047a2fdef06824f43787ebc14226974",
     "url": "/artlist-test/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/artlist-test/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "fa54f89ec99f4e8cb900",
-    "url": "/artlist-test/static/css/main.973912e9.chunk.css"
+    "revision": "a169edd17a816406f775",
+    "url": "/artlist-test/static/css/main.9143fea2.chunk.css"
   },
   {
     "revision": "9660b50cbd02d636ea24",
     "url": "/artlist-test/static/js/2.d14735d0.chunk.js"
   },
   {
-    "revision": "fa54f89ec99f4e8cb900",
+    "revision": "a169edd17a816406f775",
     "url": "/artlist-test/static/js/main.fde19894.chunk.js"
   },
   {
@@ -28,7 +28,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/artlist-test/static/media/drums.e38a00dd.jpg"
   },
   {
+    "revision": "444dfd1ef6d25b5f124f8eb5c962e04b",
+    "url": "/artlist-test/static/media/first.444dfd1e.jpg"
+  },
+  {
     "revision": "25bf045ca257e971124f3997d89f321c",
     "url": "/artlist-test/static/media/logo.25bf045c.svg"
+  },
+  {
+    "revision": "2f13d368fd3927190bc02d599cc76382",
+    "url": "/artlist-test/static/media/page3.2f13d368.png"
   }
 ]);
