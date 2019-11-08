@@ -1,0 +1,8 @@
+.header-class img{
+  position: fixed;
+  width: auto;
+  height: auto;
+  z-index: 100;
+  top: 2%;
+  left: 2%;
+}

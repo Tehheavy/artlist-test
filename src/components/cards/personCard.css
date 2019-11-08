@@ -1,0 +1,13 @@
+.person-card-class{
+    height: 250px;
+    width:200px;
+
+  
+}
+.person-card-class div{
+    height:100%;
+    width:100%;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; /* Center the image */
+    
+}

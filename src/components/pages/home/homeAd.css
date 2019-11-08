@@ -1,0 +1,26 @@
+.home-ad-class{
+    width:100vw;
+
+    height: 100vh;
+
+    background-image:
+    linear-gradient(to bottom, rgb(32, 32, 32),rgb(32, 32, 32)30%,rgba(32, 32, 32, 0.774)60%,rgba(32, 32, 32, 0.637)80%, rgba(39, 39, 39, 0.151) 100%),
+    url(./drums.jpg);
+ 
+
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; /* Center the image */
+    overflow: auto;
+}
+
+.home-ad-cards-class{
+    width:100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.home-ad-container-class{
+    width: 100vw;
+}

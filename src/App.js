@@ -1,23 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/pages/home/home'
+import HomeAd from './components/pages/home/homeAd'
+import Home3 from './components/pages/home/home3'
+import Footer from './components/footer'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Home></Home>
+        {/* gap */}
+        <HomeAd ></HomeAd>
+        <Home3></Home3>
+        <Footer></Footer>
       </header>
     </div>
   );

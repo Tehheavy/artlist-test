@@ -1,0 +1,13 @@
+.advert-Footer-Card-class{
+    text-align: left;
+    width: 17vw;
+    margin-right: 3rem;
+}
+@media screen and (max-width: 900px) {
+
+    .advert-Footer-Card-class{
+        text-align: left;
+        width: 25vw;
+        margin-right: 1rem;
+    }
+}

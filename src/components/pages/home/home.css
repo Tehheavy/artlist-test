@@ -1,0 +1,38 @@
+
+.home-class{
+    width:100%;
+    height: 100vh;
+    
+    background:url(./first.jpg);
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    
+}
+.home-container-class{
+    display:flex;
+    justify-content:space-around;
+}
+.home-container-class div{
+    display:block;
+    margin-top:25vh;
+}
+.home-container-class div button{
+    border: 2px solid rgb(255, 255, 255);  
+    background-color: Transparent;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    font-size: x-large;
+    border-radius: 50%;
+    text-align: top;
+
+}
+.home-container-class div button:hover{
+
+    transition-duration: 0.5s;
+    background-color: rgb(249, 87, 255);
+    color:white;
+}

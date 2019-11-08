@@ -1,0 +1,54 @@
+
+.home3-class{
+    width:100vw ;
+    
+    background:url(./page3.png);
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    
+}
+.home3-container-class{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-left: 1rem;
+    
+}
+.home3-container-class div{
+    display:flex;
+    flex-direction: column;
+    margin-top:25vh;
+    margin-bottom: 25vh;
+}
+.home3-container-class>div button{
+    
+    border: 2px solid rgb(255, 255, 255);  
+    background-color: Transparent;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    height: 3rem;
+    width: 10rem;
+    font-size: x-large;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgb(255, 217, 0);
+    text-align: top;
+    border-color: rgba(0, 0, 0, 0);
+
+}
+.home3-container-class div button:hover{
+
+    transition-duration: 0.5s;
+    background-color: rgb(211, 112, 0);
+    color:white;
+}
+@media screen and (max-width: 900px) {
+
+    .home3-container-class{
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    }
+    .filler-class{
+        display: none;
+    }
+}

@@ -1,20 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 .App {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  overflow-x:hidden;
+  background-color: rgb(26, 26, 26);
 }
 
-.App-logo {
-  height: 40vmin;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .App-link {
