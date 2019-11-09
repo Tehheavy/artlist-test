@@ -1,0 +1,291 @@
+.Window {
+    text-align: left;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.836);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(-110%);
+    transition: transform 0.3s ease-in-out;
+    color: white;
+    overflow-x:hidden;  
+    /* text-align: center; */
+}
+
+.Blur {
+    filter: blur(4px);
+    transition: filter 0.6s ease-in-out;
+}
+
+.Blur.off {
+    filter: blur(0px);
+}
+
+.Window-x {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    /* cursor: pointer;; */
+}
+
+.Window-x:hover {
+    cursor: pointer;
+    color: transparent;
+    text-shadow: 0 0 0 rgb(255, 156, 2);
+}
+
+.Window-x:hover::after,
+.Window-x::after {
+    content: "\2716";
+    font-size: 30px;
+}
+
+.Window.open {
+    transform: translateX(0);
+}
+
+.window-right {
+    background: #1d1d1d;
+}
+
+.center {
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill {
+    height: 100%;
+    min-height: 100%;
+}
+
+
+
+.left-window-fieldset legend {
+    /* margin: 20px; */
+    margin-left: 25px;
+    margin: 0 0 -15px 25px;
+    width: 80px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.left-window-fieldset input {
+    background: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 14px;
+    outline: none;
+}
+
+.left-window-fieldset:focus-within {
+    color: #af9729;
+}
+
+.left-window-fieldset input:focus {
+    /* background: none; */
+    border: none;
+}
+
+select {
+    appearance: none;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right 10px center rgba(221, 221, 221, 0) !important;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: inherit;
+    ;
+}
+
+option {
+    background: #2a2a2a;
+}
+
+
+.window-left-input {
+    background: none;
+    border-radius: 10px;
+    width: 100%;
+    border: 2px solid;
+    border-color: #858586;
+    padding: 14px;
+    outline: none;
+    transition: border-color 0.2s ease-in;
+    color: white;
+}
+
+.window-left-input-bio {
+    height: 100px;
+    min-height: 60px;
+}
+
+.window-left-input:focus {
+    border-color: #af9729;
+}
+
+.window-left {
+    display: flex;
+    flex-direction: column;
+    width:400px;
+}
+@media screen and (max-width: 900px) {
+
+    .window-left {
+        display: flex;
+        flex-direction: column;
+        width:80%;
+    }
+}
+
+.left-window-fieldset {
+    border: 2px solid;
+    color: #858586;
+    border-radius: 10px;
+    width: 100%;
+    transition: color 0.2s ease-in;
+    /* border-top: 3px solid black; */
+}
+
+.window-left-list {
+    padding: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.window-left-list>li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.window-left-list>li>input[type=radio] {
+    /* background: none; */
+    visibility: none;
+    background-color: red;
+    ;
+}
+
+/* custom radio/checkbox */
+
+.input-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    margin: 0;
+    user-select: none;
+}
+
+.input-container p {
+    margin: 0 0 1px 0;
+}
+
+.input-container input {
+    display: none;
+}
+
+.input-container .radio-button {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: 2px solid #858586;
+    border-radius: 50%;
+}
+
+.input-container .checkbox-button {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 1px;
+}
+
+.radio-button-container {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+}
+
+.checkbox-button-container {
+    display: flex;
+    position: relative;
+    height: inherit;
+    width: inherit;
+}
+
+.input-container input:checked~div .radio-button:after {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    top: 50%;
+    left: 50%;
+    background: #858586;
+    transform: translate(-50%, -50%);
+}
+
+.input-container input:checked~div .checkbox-button {
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyMjYgMjI2IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIHRyYW5zZm9ybT0iIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwyMjZ2LTIyNmgyMjZ2MjI2eiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxwYXRoIGQ9IiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0xODEuNTY1MSw0OS43MzE3N2wtOTYuODE1MSw5Ni44MTUxbC00MC4zMTUxLC00MC4zMTUxbC0xMy41MzY0NiwxMy41MzY0Nmw0Ny4wODMzMyw0Ny4wODMzM2w2Ljc2ODIzLDYuNDczOTZsNi43NjgyMywtNi40NzM5NmwxMDMuNTgzMzMsLTEwMy41ODMzM3oiPjwvcGF0aD48L2c+PC9nPjwvZz48L3N2Zz4=') 50% 50% no-repeat;
+    background-size: 100%;
+
+}
+
+
+/* right window */
+.window-right {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.window-right-list {
+    margin: 0;
+    padding: 0;
+}
+
+.window-right-list>li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.text-gray {
+    color: #858586;
+}
+/* dropzone (file upload thing) */
+.dropzone-container {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    height: 20vh;
+    /* overflow: hidden; */
+    border: 2px dashed grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.dropzone-container p{
+    margin: 0;
+    padding: 0;;
+}
+
+.dropzone-active {
+    background: rgba(0, 217, 255, 0.212);
+}
+
+.dropzone-inactive {
+    /* background: green; */
+}

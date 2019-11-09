@@ -7,6 +7,10 @@
     background-size: cover; /* Resize the background image to cover the entire container */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
+        min-height: 100vh;
+
+        font-size: calc(10px + 2vmin);
+        color: rgb(0, 0, 0);
     
 }
 .home-container-class{

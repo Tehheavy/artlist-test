@@ -7,6 +7,9 @@
     linear-gradient(to bottom, rgb(32, 32, 32),rgb(32, 32, 32)30%,rgba(32, 32, 32, 0.774)60%,rgba(32, 32, 32, 0.637)80%, rgba(39, 39, 39, 0.151) 100%),
     url(./drums.jpg);
  
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
 
     background-size: cover; /* Resize the background image to cover the entire container */
     background-position: center; /* Center the image */

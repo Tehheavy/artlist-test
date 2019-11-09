@@ -1,7 +1,10 @@
-import React from "react";
+import React,{useState} from "react";
 import "./home3.css";
+import Window from '../../window'
 
-function Home3() {
+function Home3(props) {
+  const [isWindowOpen, setWindowOpen] = useState(false);
+	let className = isWindowOpen ? "App Blur on" : "App Blur off"
   return (
     <div className="home3-class">
       <div className="home3-container-class">
@@ -26,12 +29,16 @@ function Home3() {
             music.
           </p>
           <br></br>
-          <button>
+          <button onClick={() => {
+          props.setWindowOpen(true);
+          props.setBlur("App Blur on");
+				}}>
             <span>Start Now</span>
           </button>
         </div>
         <div className="filler-class"></div>
         <div className="filler-class"></div>
+
       </div>
     </div>
   );
