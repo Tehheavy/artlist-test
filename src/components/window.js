@@ -139,6 +139,11 @@ function RightWindow(props) {
 						<p className="text-gray" style={{fontSize:'10px',marginLeft:'1em'}}>The music is clear of use in any web platform, including YouTube monetization.</p>
 					</label>
 				</li>
+				<li style={{textAlign:"center"}}>
+					<button className="yellow-button-artlist">
+          				  <span>Submit</span>
+          			</button>
+				</li>
 			</ul>
 		</div>
 	)
